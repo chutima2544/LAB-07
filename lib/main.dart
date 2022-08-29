@@ -71,6 +71,14 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text("Calculator"),
 
+          actions: [
+            IconButton(
+              icon: Icon(Icons.add),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MathFormula()),);
+              },)
+          ],
+
         ),
         backgroundColor: Color.fromARGB(255, 178, 210, 236),
         body: SafeArea(
